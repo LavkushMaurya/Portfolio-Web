@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Design B — Portfolio | Your Name</title>
+  <meta name="description" content="Student portfolio — BCA / MCA" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="sytles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container top-inner">
+      <div class="brand">Portfolio<span class="dot">.</span></div>
+      <nav class="topnav">
+        <ul id="navB">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="menuB" class="hamburger" aria-label="Open menu">☰</button>
+   <!-- Slide toggle button -->
+<label class="switch">
+  <input type="checkbox" id="themeB">
+  <span class="slider"></span>
+</label>
+
+</button>
+</button>
+
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero-b">
+      <div class="container hero-b-grid">
+        <div class="hero-left">
+          <h1>I'm <span class="accent">Lavkush Maurya</span></h1>
+          <p class="lead">BCA / MCA Student • Software Developer</p>
+          <p>I build efficient web apps and desktop solutions using .NET and modern JavaScript frameworks. Seeking internships and collaborative projects.</p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="#skills">View Skills</a>
+            <a class="btn outline" href="#projects">See Projects</a>
+          </div>
+
+          <ul class="contact-mini">
+            <li>Email: <a href="mailto:you@example.com">mauryalavkush33@gmail.com</a></li>
+            <li>Location: Delhi, India.</li>
+          </ul>
+        </div>
+
+        <div class="profile-card alt-card">
+  <div class="avatar">
+    <img src="ProfilePhoto.jpeg" alt="Profile">
+  </div>
+  <div class="socials">
+    <a href="https://github.com/LavkushMaurya">GitHub</a>  • <a href="https://www.linkedin.com/in/lavkush-maurya-569883204/">LinkedIn</a>
+  </div>
+</div>
+
+
+    </section>
+
+    <section id="skills" class="section-b">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-row">
+          <div class="skill">
+            <h4>Java</h4>
+            <div class="bar"><div class="fill" style="width:88%"></div></div>
+          </div>
+          <div class="skill">
+            <h4>JavaScript</h4>
+            <div class="bar"><div class="fill" style="width:78%"></div></div>
+          </div>
+          <div class="skill">
+            <h4>React</h4>
+            <div class="bar"><div class="fill" style="width:70%"></div></div>
+          </div>
+          <div class="skill">
+            <h4>SQL</h4>
+            <div class="bar"><div class="fill" style="width:82%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-b alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-b-grid">
+          <article class="proj">
+            <img src="https://i.ibb.co/1f4k5hR/project1.jpg" alt="Project">
+            <div class="proj-body">
+              <h3>Student Management System</h3>
+              <p>Java + MySQL desktop/web hybrid for managing students & reports.</p>
+              <div class="proj-actions"><button class="openProj" data-title="Student Management System" data-desc="Full CRUD app made with Java & MySQL.">Details</button></div>
+            </div>
+          </article>
+
+          <article class="proj">
+            <img src="https://i.ibb.co/Zc0Qc86/project2.jpg" alt="Project">
+            <div class="proj-body">
+              <h3>Personal Portfolio</h3>
+              <p>Responsive portfolio built with vanilla JS and modern CSS.</p>
+              <div class="proj-actions"><button class="openProj" data-title="Personal Portfolio" data-desc="This portfolio showcases projects & skills.">Details</button></div>
+            </div>
+          </article>
+
+          <article class="proj">
+            <img src="https://i.ibb.co/gynh0tq/project3.jpg" alt="Project">
+            <div class="proj-body">
+              <h3>E-commerce UI</h3>
+              <p>React frontend displaying products, filters and cart interactions.</p>
+              <div class="proj-actions"><button class="openProj" data-title="E-commerce UI" data-desc="React UI implementing product list, cart & filters.">Details</button></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-b">
+      <div class="container">
+        <h2>Contact</h2>
+        <form id="contactB" class="contact-b" action="https://formspree.io/f/yourFormID" method="POST" novalidate>
+          <input name="name" placeholder="Your name" required>
+          <input name="email" type="email" placeholder="Your email" required>
+          <textarea name="message" rows="5" placeholder="Message" required></textarea>
+          <button class="btn primary" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot-b">
+    <div class="container">
+      <p>© <span id="yearB"></span> Lavkush Maurya • Software Developer</p>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div id="projModal" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-inner">
+      <button id="closeProj" class="modal-close" aria-label="Close">×</button>
+      <h3 id="projTitle"></h3>
+      <p id="projDesc"></p>
+    </div>
+  </div>
+
+  <button id="topB" class="to-top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
