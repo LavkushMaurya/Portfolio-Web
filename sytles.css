@@ -165,8 +165,25 @@ input:checked + .slider:before {
 .proj-actions{margin-top:10px}
 
 /* contact */
-.contact-b{max-width:640px;margin:auto;display:flex;flex-direction:column;gap:12px}
-.contact-b input,.contact-b textarea{padding:12px;border-radius:8px;border:1px solid rgba(0,0,0,0.06);background:transparent;color:var(--text)}
+/* contact */
+.contact-b {
+  max-width: 640px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-b input,
+.contact-b textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #000; /* bold black outline */
+  background: transparent;
+  color: var(--text);
+  font-weight: 500; /* makes text inside slightly bold */
+}
+
 
 /* footer */
 .foot-b{padding:18px 0;background:transparent;text-align:center}
